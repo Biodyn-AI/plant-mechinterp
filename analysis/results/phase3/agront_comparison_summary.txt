@@ -1,0 +1,37 @@
+
+AGRONT COMPARISON SUMMARY
+=========================
+
+Hardware Environment:
+- GPU: NVIDIA GeForce RTX 2060
+- GPU Memory: 6.0 GB
+- Date: 2026-02-13 22:40
+
+AgroNT Loading Attempt:
+- Success: False
+- Error Type: all_strategies_failed
+- Details: See logs for details
+- Status: FAILED - Hardware limitations (6GB VRAM insufficient)
+- Recommendation: Use cloud infrastructure (16GB+ VRAM) for AgroNT analysis
+
+Plant-DnaGemma Loading:
+- Success: True
+- Parameters: 152.4M
+- Memory Used: 0.57 GB
+- Status: SUCCESSFUL (baseline model)
+
+Comparison Status: NOT POSSIBLE
+- Reason: AgroNT failed to load due to hardware limitations
+- Alternative: Focus analysis on Plant-DnaGemma with stronger hardware for AgroNT
+
+Cloud Infrastructure Recommendations:
+1. Google Colab Pro+ (A100 runtime)
+2. AWS EC2 with g4dn.xlarge or larger
+3. Azure NC6s_v3 or higher
+4. Minimum 16GB VRAM recommended for AgroNT analysis
+
+Plant-DnaGemma Analysis Benefits:
+- Fits well within 6GB VRAM constraint
+- Sufficient complexity for mechanistic interpretability
+- Plant-specific training data and architecture
+- Enables complete Phase 3 analysis on available hardware

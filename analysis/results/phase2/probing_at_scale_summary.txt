@@ -1,0 +1,48 @@
+PROBING AT SCALE ANALYSIS RESULTS
+========================================
+
+This analysis reveals the model's representational hierarchy:
+Where does the model 'know' what type of sequence it's looking at?
+
+OVERALL FINDINGS:
+Best performing layer: 10 (Transformer Layer 10)
+Best accuracy: 0.718 (187.2% above chance)
+Random baseline: 0.250 (4 classes)
+
+LAYER-WISE PERFORMANCE:
+Layer  0 (  Embeddings): 0.513 (+105.1%)
+Layer  1 (Transformer-1): 0.590 (+135.9%)
+Layer  2 (Transformer-2): 0.692 (+176.9%)
+Layer  3 (Transformer-3): 0.667 (+166.7%)
+Layer  4 (Transformer-4): 0.641 (+156.4%)
+Layer  5 (Transformer-5): 0.615 (+146.2%)
+Layer  6 (Transformer-6): 0.564 (+125.6%)
+Layer  7 (Transformer-7): 0.590 (+135.9%)
+Layer  8 (Transformer-8): 0.615 (+146.2%)
+Layer  9 (Transformer-9): 0.641 (+156.4%)
+Layer 10 (Transformer-10): 0.718 (+187.2%)
+Layer 11 (Transformer-11): 0.718 (+187.2%)
+Layer 12 (Transformer-12): 0.513 (+105.1%)
+
+DETAILED ANALYSIS - LAYER 10:
+Per-class performance:
+          exon: P=0.889 R=0.727 F1=0.800 (n=11.0)
+    intergenic: P=0.500 R=0.444 F1=0.471 (n=9.0)
+        intron: P=0.875 R=0.778 F1=0.824 (n=9.0)
+      promoter: P=0.643 R=0.900 F1=0.750 (n=10.0)
+
+Overall metrics:
+  Macro avg F1: 0.711
+  Weighted avg F1: 0.717
+
+REPRESENTATIONAL HIERARCHY INSIGHTS:
+Significant accuracy improvements:
+  Layer 0 -> 1: +0.077 (+30.8%)
+  Layer 1 -> 2: +0.103 (+41.0%)
+  Layer 9 -> 10: +0.077 (+30.8%)
+
+Sequence type learnability ranking:
+  1. intron: F1=0.824
+  2. exon: F1=0.800
+  3. promoter: F1=0.750
+  4. intergenic: F1=0.471

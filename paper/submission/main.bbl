@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{dalla2023nucleotide}
+Hugo Dalla-Torre, Liam Gonzalez, Javier Mendoza-Revilla, Nicolas~Lopez
+  Carranza, Adam~Henryk Grzywaczewski, Francesco Ober, Elber Dber, et~al.
+\newblock The nucleotide transformer: Building and evaluating robust foundation
+  models for human genomics.
+\newblock {\em bioRxiv}, 2023.
+
+\bibitem{nguyen2024hyenadna}
+Eric Nguyen, Michael Poli, Matthew Faber, Jerry Arber, Stefano Gross, Stefano
+  Massaroli, et~al.
+\newblock {HyenaDNA}: Long-range genomic sequence modeling at single nucleotide
+  resolution.
+\newblock {\em Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem{ji2021dnabert}
+Yanrong Ji, Zhihan Zhou, Han Liu, and Ramana~V Davuluri.
+\newblock {DNABERT}: pre-trained bidirectional encoder representations from
+  transformers model for dna-language in genome.
+\newblock {\em Bioinformatics}, 37(15):2112--2120, 2021.
+
+\bibitem{mendoza2024agront}
+Javier Mendoza-Revilla, Evan Trop, Liam Gonzalez, Maša Roller, Hugo
+  Dalla-Torre, Bernardo~P de~Almeida, et~al.
+\newblock {AgroNT}: A large-scale generative language model for plant genomics.
+\newblock {\em bioRxiv}, 2024.
+
+\bibitem{yu2024plantrna}
+Haopeng Yu et~al.
+\newblock {PlantRNA-FM}: A plant rna foundation model for exploring functional
+  rna landscapes in plants.
+\newblock {\em Nature Machine Intelligence}, 2024.
+
+\bibitem{zhang2024plantdnagemma}
+Tao Zhang et~al.
+\newblock Plant-dnagemma: A plant dna large language model based on gemma.
+\newblock {\em bioRxiv}, 2024.
+
+\end{thebibliography}

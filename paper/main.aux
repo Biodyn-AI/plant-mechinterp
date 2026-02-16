@@ -1,0 +1,124 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{dalla2023nucleotide,nguyen2024hyenadna,ji2021dnabert}
+\citation{mendoza2024agront}
+\citation{yu2024plantrna}
+\citation{zhang2024plantdnagemma}
+\citation{elhage2022toy,olah2020zoom,conmy2023towards}
+\citation{wang2023interpretability}
+\citation{neel2023grokking}
+\citation{meng2022locating}
+\citation{schnable2009maize,arabidopsis2000analysis}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{ji2021dnabert}
+\citation{dalla2023nucleotide}
+\citation{nguyen2024hyenadna}
+\citation{mendoza2024agront}
+\citation{zhang2024plantdnagemma}
+\citation{yu2024plantrna}
+\citation{olah2020zoom,elhage2022toy}
+\citation{alain2017understanding,belinkov2017neural}
+\citation{vig2020investigating,meng2022locating}
+\citation{cunningham2023sparse,bricken2023monosemanticity}
+\citation{olsson2022context}
+\citation{wang2023interpretability}
+\citation{geva2023dissecting}
+\citation{nostalgebraist2020logit}
+\citation{belrose2023eliciting}
+\citation{clauwaert2021explainability}
+\citation{avsec2021effective}
+\citation{yu2024plantrna}
+\citation{vig2021bertology,rao2019evaluating}
+\citation{zhang2024plantdnagemma}
+\citation{team2024gemma}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Genomic Foundation Models.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mechanistic Interpretability.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Interpretability in Genomics.}{2}{section*.3}\protected@file@percent }
+\citation{meng2022locating}
+\citation{bricken2023monosemanticity}
+\citation{cunningham2023sparse}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Model and Data}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Plant-DnaGemma.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sequence Datasets.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Linear Probing}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Attention Pattern Analysis}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Activation Patching}{3}{subsection.3.4}\protected@file@percent }
+\citation{belrose2023eliciting}
+\citation{tenney2019bert}
+\citation{dosovitskiy2021image}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Sparse Autoencoders}{4}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Cross-Species Representation Analysis}{4}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Representational Hierarchy Across Layers}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Differential Learnability of Genomic Sequence Types}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Attention Head Specialization}{4}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Comprehensive probing analysis of Plant-DnaGemma representations. (Top-left) Classification accuracy across 13 layers showing peak performance at layer 10 (71.8\%, 187\% above chance). (Top-right) Relative improvement over chance baseline, highlighting critical representation emergence points. (Bottom-left) Per-class F1 scores at layer 10, revealing introns as most distinguishable (0.824) and intergenic regions as most challenging (0.471). (Bottom-right) Representational hierarchy with annotated knowledge emergence and refinement phases.}}{5}{figure.caption.6}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:probing}{{1}{5}{Comprehensive probing analysis of Plant-DnaGemma representations. (Top-left) Classification accuracy across 13 layers showing peak performance at layer 10 (71.8\%, 187\% above chance). (Top-right) Relative improvement over chance baseline, highlighting critical representation emergence points. (Bottom-left) Per-class F1 scores at layer 10, revealing introns as most distinguishable (0.824) and intergenic regions as most challenging (0.471). (Bottom-right) Representational hierarchy with annotated knowledge emergence and refinement phases}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Causal Role of Regulatory Motifs}{5}{subsection.4.4}\protected@file@percent }
+\citation{bricken2023monosemanticity}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class probing performance at layer 10 (best layer).}}{6}{table.caption.7}\protected@file@percent }
+\newlabel{tab:perclass}{{1}{6}{Per-class probing performance at layer 10 (best layer)}{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Evolution of attention patterns across Plant-DnaGemma layers. Each panel shows average attention heatmaps for layers 0, 2, 4, 6, 8, and 10. Early layers exhibit diffuse attention to sequence beginnings. Layer 4 develops strong diagonal (local) attention patterns. Middle layers (6-8) show sparse, distributed attention for global integration. The progression from local syntactic processing to global semantic integration mirrors patterns observed in language transformers.}}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:attention}{{2}{6}{Evolution of attention patterns across Plant-DnaGemma layers. Each panel shows average attention heatmaps for layers 0, 2, 4, 6, 8, and 10. Early layers exhibit diffuse attention to sequence beginnings. Layer 4 develops strong diagonal (local) attention patterns. Middle layers (6-8) show sparse, distributed attention for global integration. The progression from local syntactic processing to global semantic integration mirrors patterns observed in language transformers}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Sparse Feature Discovery}{6}{subsection.4.5}\protected@file@percent }
+\citation{tenney2019bert,rogers2020primer}
+\citation{ethayarajh2019contextual}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Sparse autoencoder decomposition of layer-10 representations. (Top row) Feature activation statistics showing successful sparse encoding: each sequence activates ~75.2 features (29\% of dictionary), with heavy-tailed magnitude distribution. (Bottom row) PCA visualization reveals sequence-type clustering in feature space, with features showing biological interpretability through correlation with genomic properties. The 70.6\% sparsity demonstrates effective compression while preserving biologically relevant information.}}{7}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:sae}{{3}{7}{Sparse autoencoder decomposition of layer-10 representations. (Top row) Feature activation statistics showing successful sparse encoding: each sequence activates ~75.2 features (29\% of dictionary), with heavy-tailed magnitude distribution. (Bottom row) PCA visualization reveals sequence-type clustering in feature space, with features showing biological interpretability through correlation with genomic properties. The 70.6\% sparsity demonstrates effective compression while preserving biologically relevant information}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Species Representation Structure}{7}{subsection.4.6}\protected@file@percent }
+\citation{lelli2012disentangling}
+\citation{rao2019evaluating,rives2021biological}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Cross-species analysis reveals emergent phylogenetic structure in Plant-DnaGemma representations. (Top row) PCA and t-SNE projections show species clustering, with rice forming distinct clusters while Arabidopsis and maize representations overlap more extensively. (Bottom row) Species classification achieves 81.7\% test accuracy (145\% above chance), with inter-species distances reflecting evolutionary relationships: rice (monocot) is well-separated from Arabidopsis (dicot), while rice and maize show greater similarity as related grasses.}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:species}{{4}{8}{Cross-species analysis reveals emergent phylogenetic structure in Plant-DnaGemma representations. (Top row) PCA and t-SNE projections show species clustering, with rice forming distinct clusters while Arabidopsis and maize representations overlap more extensively. (Bottom row) Species classification achieves 81.7\% test accuracy (145\% above chance), with inter-species distances reflecting evolutionary relationships: rice (monocot) is well-separated from Arabidopsis (dicot), while rice and maize show greater similarity as related grasses}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Plant DNA Transformers Learn Hierarchical Genomic Representations.}{8}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Distributed Rather Than Localized Motif Encoding.}{8}{section*.12}\protected@file@percent }
+\citation{templeton2024scaling}
+\bibdata{references}
+\bibcite{alain2017understanding}{{1}{2017}{{Alain and Bengio}}{{}}}
+\bibcite{avsec2021effective}{{2}{2021}{{Avsec et~al.}}{{Avsec, Agarwal, Visentin, Ledsam, Grabska-Barwinska, Taylor, et~al.}}}
+\bibcite{belinkov2017neural}{{3}{2017}{{Belinkov et~al.}}{{Belinkov, Durrani, Dalvi, Sajjad, and Glass}}}
+\@writefile{toc}{\contentsline {paragraph}{Emergent Biological Knowledge.}{9}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Implications for Model Development.}{9}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{9}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{9}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility.}{9}{section*.16}\protected@file@percent }
+\bibcite{belrose2023eliciting}{{4}{2023}{{Belrose et~al.}}{{Belrose, Furman, Smith, Halawi, Ostrovsky, McKinney, Biderman, and Steinhardt}}}
+\bibcite{bricken2023monosemanticity}{{5}{2023}{{Bricken et~al.}}{{Bricken, Templeton, Batson, Chen, Jermyn, Conerly, et~al.}}}
+\bibcite{clauwaert2021explainability}{{6}{2021}{{Clauwaert and Waegeman}}{{}}}
+\bibcite{conmy2023towards}{{7}{2023}{{Conmy et~al.}}{{Conmy, Mavor-Parker, Lynch, Heimersheim, and Garriga-Alonso}}}
+\bibcite{cunningham2023sparse}{{8}{2023}{{Cunningham et~al.}}{{Cunningham, Ewart, Riggs, Huben, and Sharkey}}}
+\bibcite{dalla2023nucleotide}{{9}{2023}{{Dalla-Torre et~al.}}{{Dalla-Torre, Gonzalez, Mendoza-Revilla, Carranza, Grzywaczewski, Ober, Dber, et~al.}}}
+\bibcite{dosovitskiy2021image}{{10}{2021}{{Dosovitskiy et~al.}}{{Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, et~al.}}}
+\bibcite{elhage2022toy}{{11}{2022}{{Elhage et~al.}}{{Elhage, Hume, Olsson, Schiefer, Henighan, Kravec, et~al.}}}
+\bibcite{ethayarajh2019contextual}{{12}{2019}{{Ethayarajh}}{{}}}
+\bibcite{team2024gemma}{{13}{2024}{{Gemma Team}}{{}}}
+\bibcite{geva2023dissecting}{{14}{2023}{{Geva et~al.}}{{Geva, Bastings, Filippova, and Globerson}}}
+\bibcite{ji2021dnabert}{{15}{2021}{{Ji et~al.}}{{Ji, Zhou, Liu, and Davuluri}}}
+\bibcite{lelli2012disentangling}{{16}{2012}{{Lelli et~al.}}{{Lelli, Slattery, and Mann}}}
+\bibcite{mendoza2024agront}{{17}{2024}{{Mendoza-Revilla et~al.}}{{Mendoza-Revilla, Trop, Gonzalez, Roller, Dalla-Torre, de~Almeida, et~al.}}}
+\bibcite{meng2022locating}{{18}{2022}{{Meng et~al.}}{{Meng, Bau, Andonian, and Belinkov}}}
+\bibcite{neel2023grokking}{{19}{2023}{{Nanda et~al.}}{{Nanda, Chan, Lieberum, Smith, and Steinhardt}}}
+\bibcite{nguyen2024hyenadna}{{20}{2024}{{Nguyen et~al.}}{{Nguyen, Poli, Faber, Arber, Gross, Massaroli, et~al.}}}
+\bibcite{nostalgebraist2020logit}{{21}{2020}{{nostalgebraist}}{{}}}
+\bibcite{olah2020zoom}{{22}{2020}{{Olah et~al.}}{{Olah, Cammarata, Schubert, Goh, Petrov, and Carter}}}
+\bibcite{olsson2022context}{{23}{2022}{{Olsson et~al.}}{{Olsson, Elhage, Nanda, Joseph, DasSarma, Henighan, et~al.}}}
+\bibcite{rao2019evaluating}{{24}{2019}{{Rao et~al.}}{{Rao, Bhatt, Lu, Cowperthwaite, and Sun}}}
+\bibcite{rives2021biological}{{25}{2021}{{Rives et~al.}}{{Rives, Meier, Sercu, Goyal, Lin, Liu, et~al.}}}
+\bibcite{rogers2020primer}{{26}{2020}{{Rogers et~al.}}{{Rogers, Kovaleva, and Rumshisky}}}
+\bibcite{schnable2009maize}{{27}{2009}{{Schnable et~al.}}{{Schnable, Ware, Fulton, et~al.}}}
+\bibcite{templeton2024scaling}{{28}{2024}{{Templeton et~al.}}{{Templeton, Conerly, Marcus, Lindsey, Bricken, Chen, et~al.}}}
+\bibcite{tenney2019bert}{{29}{2019}{{Tenney et~al.}}{{Tenney, Das, and Pavlick}}}
+\bibcite{arabidopsis2000analysis}{{30}{2000}{{The Arabidopsis Genome Initiative}}{{}}}
+\bibcite{vig2020investigating}{{31}{2020}{{Vig et~al.}}{{Vig, Gehrmann, Belinkov, Qian, Nevo, Singer, and Shieber}}}
+\bibcite{vig2021bertology}{{32}{2021}{{Vig et~al.}}{{Vig, Madani, Varshney, Xiong, Socher, and Naik}}}
+\bibcite{wang2023interpretability}{{33}{2023}{{Wang et~al.}}{{Wang, Variengien, Conmy, Shlegeris, and Steinhardt}}}
+\bibcite{yu2024plantrna}{{34}{2024}{{Yu et~al.}}{{}}}
+\bibcite{zhang2024plantdnagemma}{{35}{2024}{{Zhang et~al.}}{{}}}
+\bibstyle{plainnat}
+\gdef \@abspage@last{11}

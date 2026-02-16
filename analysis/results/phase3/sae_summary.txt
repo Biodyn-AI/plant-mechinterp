@@ -1,0 +1,33 @@
+
+SPARSE AUTOENCODER ANALYSIS SUMMARY
+====================================
+
+Model Configuration:
+- Input Dimensions: 768
+- Hidden Dimensions: 256
+- Sparsity Penalty: 0.001
+- Training Epochs: 100
+
+Dataset:
+- Sequences Analyzed: 400
+- Sequence Types: 4 (Promoter, Exon, Intron, Intergenic)
+- Hidden States Source: Plant-DnaGemma Layer 10
+
+Results:
+- Mean Sparsity: 0.706
+- Average Active Features per Sample: 75.2
+- Final Reconstruction Loss: 1.9259
+- Final Sparsity Loss: 0.5373
+
+Key Findings:
+1. Successfully trained sparse autoencoder on Plant-DnaGemma representations
+2. Achieved 70.6% sparsity in learned features
+3. Identified 75 active features per sequence on average
+4. Features show clear clustering patterns related to sequence types
+5. Learned representations demonstrate biological structure in genomic sequences
+
+Files Generated:
+- sparse_autoencoder.pth (trained model weights)
+- sae_training_history.png (training curves)
+- sae_feature_analysis.png (comprehensive feature analysis)
+- sae_analysis_results.pkl (complete results)

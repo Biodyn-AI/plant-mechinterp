@@ -1,0 +1,43 @@
+Plant-DnaGemma Mechanistic Interpretability Analysis Summary
+============================================================
+
+Model: zhangtaolab/plant-dnagemma-BPE
+Architecture: Gemma (12 layers, 12 heads, 768 dims)
+Sequences analyzed: 6
+
+Sequence: arabidopsis_AT1G01010_real
+  Length: 400 bp
+  Tokens: 71
+  Final layer mean activation: 40.799
+  Final layer sparsity: 0.009
+
+Sequence: AT1G01010_promoter
+  Length: 400 bp
+  Tokens: 59
+  Final layer mean activation: 44.404
+  Final layer sparsity: 0.001
+
+Sequence: random_sequence
+  Length: 400 bp
+  Tokens: 54
+  Final layer mean activation: 46.818
+  Final layer sparsity: 0.007
+
+Sequence: short_test
+  Length: 47 bp
+  Tokens: 9
+  Final layer mean activation: 35.724
+  Final layer sparsity: 0.009
+
+Sequence: synthetic_promoter_with_motifs
+  Length: 400 bp
+  Tokens: 57
+  Final layer mean activation: 38.577
+  Final layer sparsity: 0.005
+
+Sequence: test_promoter_with_clear_motifs
+  Length: 381 bp
+  Tokens: 70
+  Final layer mean activation: 39.987
+  Final layer sparsity: 0.008
+

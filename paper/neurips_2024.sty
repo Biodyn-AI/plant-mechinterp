@@ -1,0 +1,24 @@
+% neurips_2024.sty - Minimal NeurIPS-like style
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2024}[2024/01/01 NeurIPS 2024 Style (minimal)]
+
+\DeclareOption{final}{\relax}
+\DeclareOption{preprint}{\relax}
+\DeclareOption{nonatbib}{\relax}
+\ProcessOptions\relax
+
+% Page layout
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{natbib}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Title formatting
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\LARGE\bfseries\@title\par}
+    \vspace{12pt}
+    {\large\@author\par}
+    \vspace{18pt}
+  \end{center}
+}

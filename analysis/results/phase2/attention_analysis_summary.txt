@@ -1,0 +1,46 @@
+ATTENTION PATTERN ANALYSIS RESULTS
+========================================
+
+Model: zhangtaolab/plant-dnagemma-BPE
+Architecture: 12 layers, 12 heads per layer
+Sequence length: 200 bp
+Tokenized length: 35 tokens
+
+TOKENS:
+   0: <bos>
+   1: AAAA
+   2: AGCAA
+   3: AAAAT
+   4: CCAAAA
+   5: CAAAAACAA
+   6: CACAAAA
+   7: AATCAA
+   8: AGAA
+   9: CCAAAA
+  10: CAA
+  11: AAAACAA
+  12: AAAAGAA
+  13: AAAATCC
+  14: GAT
+  15: CCTAA
+  16: AGAA
+  17: GAGAAGAA
+  18: ACAATAT
+  19: AAAAAT
+  ... and 15 more tokens
+
+MOTIF POSITIONS (in sequence):
+  TATA: [100]
+  CAAT: [97]
+  GC_box: []
+  AT_rich: [0, 1, 7, 8, 9, 16, 21, 22, 32, 33, 34, 48, 53, 54, 55, 60, 61, 62, 67, 68, 69, 103, 104, 122, 123, 150, 161, 162, 163, 169, 170, 171, 178, 183, 184, 194, 195, 196]
+
+ATTENTION ANALYSIS:
+  Successfully extracted attention from 12 layers
+  Each layer has 12 attention heads
+  Attention matrices are 35 x 35
+  Attention value statistics:
+    Mean: 0.0286
+    Std: 0.1010
+    Min: 0.0000
+    Max: 1.0000

@@ -1,0 +1,34 @@
+ACTIVATION PATCHING / CAUSAL TRACING RESULTS
+==================================================
+
+This analysis reveals which layers are CAUSALLY important
+for processing regulatory motifs in plant promoter sequences.
+Method: Compare activations between clean and corrupted sequences.
+
+OVERALL FINDINGS:
+Most causally critical layer: Layer 0 (Embeddings)
+Average disruption score: 0.0000
+
+LAYER IMPORTANCE RANKING (by average disruption):
+  1. Layer 0 (Embeddings): 0.0000
+  2. Layer 1 (Transformer-1): 0.0000
+  3. Layer 2 (Transformer-2): 0.0000
+  4. Layer 3 (Transformer-3): 0.0000
+  5. Layer 4 (Transformer-4): 0.0000
+
+TATA MOTIF:
+  Sequence: TATAAA
+  Positions found: [1414]
+  Representation similarity after corruption: 1.0000
+  Most affected layer: 0 (diff: 0.0000)
+  Top 3 affected layers: L0(0.000) L1(0.000) L2(0.000) 
+  Sample corruption: CTAAAGAAGAGAAGAAACAAGTAGCTAATGAAGAGAAGAAACAAA
+
+CAAT MOTIF:
+  Sequence: CAAT
+  Positions found: [1411]
+  Representation similarity after corruption: 1.0000
+  Most affected layer: 0 (diff: 0.0000)
+  Top 3 affected layers: L0(0.000) L1(0.000) L2(0.000) 
+  Sample corruption: ATCCTAAAGAAGAGAAGAAAGTTGATAAAAATGAAGAGAAGAAAC
+

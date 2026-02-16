@@ -1,0 +1,244 @@
+\begin{thebibliography}{35}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alain and Bengio(2017)]{alain2017understanding}
+Guillaume Alain and Yoshua Bengio.
+\newblock Understanding intermediate layers using linear classifier probes.
+\newblock \emph{arXiv preprint arXiv:1610.01644}, 2017.
+
+\bibitem[Avsec et~al.(2021)Avsec, Agarwal, Visentin, Ledsam, Grabska-Barwinska,
+  Taylor, et~al.]{avsec2021effective}
+{\v{Z}}iga Avsec, Vikram Agarwal, Daniel Visentin, Joseph~R Ledsam, Agnieszka
+  Grabska-Barwinska, Kyle~R Taylor, et~al.
+\newblock Effective gene expression prediction from sequence by integrating
+  long-range interactions.
+\newblock \emph{Nature Methods}, 18\penalty0 (10):\penalty0 1196--1203, 2021.
+
+\bibitem[Belinkov et~al.(2017)Belinkov, Durrani, Dalvi, Sajjad, and
+  Glass]{belinkov2017neural}
+Yonatan Belinkov, Nadir Durrani, Fahim Dalvi, Hassan Sajjad, and James Glass.
+\newblock What do neural machine translation models learn about morphology?
+\newblock \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2017.
+
+\bibitem[Belrose et~al.(2023)Belrose, Furman, Smith, Halawi, Ostrovsky,
+  McKinney, Biderman, and Steinhardt]{belrose2023eliciting}
+Nora Belrose, Zach Furman, Logan Smith, Danny Halawi, Igor Ostrovsky, Lev
+  McKinney, Stella Biderman, and Jacob Steinhardt.
+\newblock Eliciting latent predictions from transformers with the tuned lens.
+\newblock \emph{arXiv preprint arXiv:2303.08112}, 2023.
+
+\bibitem[Bricken et~al.(2023)Bricken, Templeton, Batson, Chen, Jermyn, Conerly,
+  et~al.]{bricken2023monosemanticity}
+Trenton Bricken, Adly Templeton, Joshua Batson, Brian Chen, Adam Jermyn, Tom
+  Conerly, et~al.
+\newblock Towards monosemanticity: Decomposing language models with dictionary
+  learning.
+\newblock \emph{Transformer Circuits Thread}, 2023.
+
+\bibitem[Clauwaert and Waegeman(2021)]{clauwaert2021explainability}
+Jim Clauwaert and Willem Waegeman.
+\newblock Explainability in transformer models for functional genomics.
+\newblock \emph{Briefings in Bioinformatics}, 22\penalty0 (5), 2021.
+
+\bibitem[Conmy et~al.(2023)Conmy, Mavor-Parker, Lynch, Heimersheim, and
+  Garriga-Alonso]{conmy2023towards}
+Arthur Conmy, Augustine~N Mavor-Parker, Aengus Lynch, Stefan Heimersheim, and
+  Adri{\`a} Garriga-Alonso.
+\newblock Towards automated circuit discovery for mechanistic interpretability.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2023.
+
+\bibitem[Cunningham et~al.(2023)Cunningham, Ewart, Riggs, Huben, and
+  Sharkey]{cunningham2023sparse}
+Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben, and Lee Sharkey.
+\newblock Sparse autoencoders find highly interpretable features in language
+  models.
+\newblock \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Dalla-Torre et~al.(2023)Dalla-Torre, Gonzalez, Mendoza-Revilla,
+  Carranza, Grzywaczewski, Ober, Dber, et~al.]{dalla2023nucleotide}
+Hugo Dalla-Torre, Liam Gonzalez, Javier Mendoza-Revilla, Nicolas~Lopez
+  Carranza, Adam~Henryk Grzywaczewski, Francesco Ober, Elber Dber, et~al.
+\newblock The nucleotide transformer: Building and evaluating robust foundation
+  models for human genomics.
+\newblock \emph{bioRxiv}, 2023.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, et~al.]{dosovitskiy2021image}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, et~al.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Elhage et~al.(2022)Elhage, Hume, Olsson, Schiefer, Henighan, Kravec,
+  et~al.]{elhage2022toy}
+Nelson Elhage, Tristan Hume, Catherine Olsson, Nicholas Schiefer, Tom Henighan,
+  Shauna Kravec, et~al.
+\newblock Toy models of superposition.
+\newblock \emph{arXiv preprint arXiv:2209.10652}, 2022.
+
+\bibitem[Ethayarajh(2019)]{ethayarajh2019contextual}
+Kawin Ethayarajh.
+\newblock How contextual are contextualized word representations? comparing the
+  geometry of {BERT}, {ELMo}, and {GPT-2} embeddings.
+\newblock \emph{Conference on Empirical Methods in Natural Language
+  Processing}, 2019.
+
+\bibitem[{Gemma Team}(2024)]{team2024gemma}
+{Gemma Team}.
+\newblock Gemma: Open models based on gemini research and technology.
+\newblock \emph{arXiv preprint arXiv:2403.08295}, 2024.
+
+\bibitem[Geva et~al.(2023)Geva, Bastings, Filippova, and
+  Globerson]{geva2023dissecting}
+Mor Geva, Jasmijn Bastings, Katja Filippova, and Amir Globerson.
+\newblock Dissecting recall of factual associations in auto-regressive language
+  models.
+\newblock \emph{Conference on Empirical Methods in Natural Language
+  Processing}, 2023.
+
+\bibitem[Ji et~al.(2021)Ji, Zhou, Liu, and Davuluri]{ji2021dnabert}
+Yanrong Ji, Zhihan Zhou, Han Liu, and Ramana~V Davuluri.
+\newblock {DNABERT}: pre-trained bidirectional encoder representations from
+  transformers model for dna-language in genome.
+\newblock \emph{Bioinformatics}, 37\penalty0 (15):\penalty0 2112--2120, 2021.
+
+\bibitem[Lelli et~al.(2012)Lelli, Slattery, and Mann]{lelli2012disentangling}
+Kirsten~M Lelli, Matthew Slattery, and Richard~S Mann.
+\newblock Disentangling the many layers of eukaryotic transcriptional
+  regulation.
+\newblock \emph{Annual Review of Genetics}, 46:\penalty0 43--68, 2012.
+
+\bibitem[Mendoza-Revilla et~al.(2024)Mendoza-Revilla, Trop, Gonzalez, Roller,
+  Dalla-Torre, de~Almeida, et~al.]{mendoza2024agront}
+Javier Mendoza-Revilla, Evan Trop, Liam Gonzalez, Maša Roller, Hugo
+  Dalla-Torre, Bernardo~P de~Almeida, et~al.
+\newblock {AgroNT}: A large-scale generative language model for plant genomics.
+\newblock \emph{bioRxiv}, 2024.
+
+\bibitem[Meng et~al.(2022)Meng, Bau, Andonian, and Belinkov]{meng2022locating}
+Kevin Meng, David Bau, Alex Andonian, and Yonatan Belinkov.
+\newblock Locating and editing factual associations in {GPT}.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+
+\bibitem[Nanda et~al.(2023)Nanda, Chan, Lieberum, Smith, and
+  Steinhardt]{neel2023grokking}
+Neel Nanda, Lawrence Chan, Tom Lieberum, Jess Smith, and Jacob Steinhardt.
+\newblock Progress measures for grokking via mechanistic interpretability.
+\newblock \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Nguyen et~al.(2024)Nguyen, Poli, Faber, Arber, Gross, Massaroli,
+  et~al.]{nguyen2024hyenadna}
+Eric Nguyen, Michael Poli, Matthew Faber, Jerry Arber, Stefano Gross, Stefano
+  Massaroli, et~al.
+\newblock {HyenaDNA}: Long-range genomic sequence modeling at single nucleotide
+  resolution.
+\newblock \emph{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem[nostalgebraist(2020)]{nostalgebraist2020logit}
+nostalgebraist.
+\newblock interpreting {GPT}: the logit lens.
+\newblock LessWrong blog post, 2020.
+
+\bibitem[Olah et~al.(2020)Olah, Cammarata, Schubert, Goh, Petrov, and
+  Carter]{olah2020zoom}
+Chris Olah, Nick Cammarata, Ludwig Schubert, Gabriel Goh, Michael Petrov, and
+  Shan Carter.
+\newblock Zoom in: An introduction to circuits.
+\newblock \emph{Distill}, 5\penalty0 (3):\penalty0 e00024--001, 2020.
+
+\bibitem[Olsson et~al.(2022)Olsson, Elhage, Nanda, Joseph, DasSarma, Henighan,
+  et~al.]{olsson2022context}
+Catherine Olsson, Nelson Elhage, Neel Nanda, Nicholas Joseph, Nova DasSarma,
+  Tom Henighan, et~al.
+\newblock In-context learning and induction heads.
+\newblock \emph{Transformer Circuits Thread}, 2022.
+
+\bibitem[Rao et~al.(2019)Rao, Bhatt, Lu, Cowperthwaite, and
+  Sun]{rao2019evaluating}
+Roshan Rao, Nicholas Bhatt, Suilin Lu, Carl Cowperthwaite, and Wei Sun.
+\newblock Evaluating protein transfer learning with {TAPE}.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
+
+\bibitem[Rives et~al.(2021)Rives, Meier, Sercu, Goyal, Lin, Liu,
+  et~al.]{rives2021biological}
+Alexander Rives, Joshua Meier, Tom Sercu, Siddharth Goyal, Zeming Lin, Jason
+  Liu, et~al.
+\newblock Biological structure and function emerge from scaling unsupervised
+  learning to 250 million protein sequences.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 118\penalty0
+  (15), 2021.
+
+\bibitem[Rogers et~al.(2020)Rogers, Kovaleva, and Rumshisky]{rogers2020primer}
+Anna Rogers, Olga Kovaleva, and Anna Rumshisky.
+\newblock A primer in {BERTology}: What we know about how {BERT} works.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  8:\penalty0 842--866, 2020.
+
+\bibitem[Schnable et~al.(2009)Schnable, Ware, Fulton,
+  et~al.]{schnable2009maize}
+Patrick~S Schnable, Doreen Ware, Robert~S Fulton, et~al.
+\newblock The {B73} maize genome: Complexity, diversity, and dynamics.
+\newblock \emph{Science}, 326\penalty0 (5956):\penalty0 1112--1115, 2009.
+
+\bibitem[Templeton et~al.(2024)Templeton, Conerly, Marcus, Lindsey, Bricken,
+  Chen, et~al.]{templeton2024scaling}
+Adly Templeton, Tom Conerly, Jonathan Marcus, Jack Lindsey, Trenton Bricken,
+  Brian Chen, et~al.
+\newblock Scaling monosemanticity: Extracting interpretable features from
+  {Claude} 3 {Sonnet}.
+\newblock \emph{Transformer Circuits Thread}, 2024.
+
+\bibitem[Tenney et~al.(2019)Tenney, Das, and Pavlick]{tenney2019bert}
+Ian Tenney, Dipanjan Das, and Ellie Pavlick.
+\newblock {BERT} rediscovers the classical {NLP} pipeline.
+\newblock \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2019.
+
+\bibitem[{The Arabidopsis Genome Initiative}(2000)]{arabidopsis2000analysis}
+{The Arabidopsis Genome Initiative}.
+\newblock Analysis of the genome sequence of the flowering plant
+  \textit{{Arabidopsis} thaliana}.
+\newblock \emph{Nature}, 408\penalty0 (6814):\penalty0 796--815, 2000.
+
+\bibitem[Vig et~al.(2020)Vig, Gehrmann, Belinkov, Qian, Nevo, Singer, and
+  Shieber]{vig2020investigating}
+Jesse Vig, Sebastian Gehrmann, Yonatan Belinkov, Sharon Qian, Daniel Nevo,
+  Yaron Singer, and Stuart Shieber.
+\newblock Investigating gender bias in language models using causal mediation
+  analysis.
+\newblock \emph{Advances in Neural Information Processing Systems}, 33, 2020.
+
+\bibitem[Vig et~al.(2021)Vig, Madani, Varshney, Xiong, Socher, and
+  Naik]{vig2021bertology}
+Jesse Vig, Ali Madani, Lav~R Varshney, Caiming Xiong, Richard Socher, and
+  Nazneen~Fatema Naik.
+\newblock Bertology meets biology: Interpreting attention in protein language
+  models.
+\newblock \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Wang et~al.(2023)Wang, Variengien, Conmy, Shlegeris, and
+  Steinhardt]{wang2023interpretability}
+Kevin Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris, and Jacob
+  Steinhardt.
+\newblock Interpretability in the wild: a circuit for indirect object
+  identification in {GPT-2} small.
+\newblock \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Yu et~al.(2024)]{yu2024plantrna}
+Haopeng Yu et~al.
+\newblock {PlantRNA-FM}: A plant rna foundation model for exploring functional
+  rna landscapes in plants.
+\newblock \emph{Nature Machine Intelligence}, 2024.
+
+\bibitem[Zhang et~al.(2024)]{zhang2024plantdnagemma}
+Tao Zhang et~al.
+\newblock Plant-dnagemma: A plant dna large language model based on gemma.
+\newblock \emph{bioRxiv}, 2024.
+
+\end{thebibliography}
