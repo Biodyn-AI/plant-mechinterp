@@ -73,5 +73,3 @@ This is an active research project. See `RESEARCH_PLAN.md` for detailed methodol
 - AgroNT: HuggingFace zhangtaolab/agront-1b
 
 ---
-
-*Project initiated: February 13, 2026*
