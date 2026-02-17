@@ -60,7 +60,7 @@ This is an active research project. See `RESEARCH_PLAN.md` for detailed methodol
 ```bibtex
 @misc{plantmechinterp2026,
   title={Mechanistic Interpretability of Plant Foundation Models},
-  author={OpenClaw Research},
+  author={Ihor Kendiukhov},
   year={2026},
   note={In preparation}
 }
