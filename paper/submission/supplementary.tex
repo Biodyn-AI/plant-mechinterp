@@ -1,19 +1,25 @@
-\documentclass[10pt]{article}
+\documentclass[12pt]{article}
+
+% Plant Molecular Biology - Online Resource 1
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{amsmath}
 \usepackage{setspace}
+\usepackage[round]{natbib}
 
-\doublespacing
+\onehalfspacing
 
-\graphicspath{{../figures/}{../../../analysis/results/phase2/}{../../../analysis/results/phase3/}}
+\graphicspath{{../figures/}{../../../analysis/results/phase2/}{../../../analysis/results/phase3/}{../../../analysis/results/enhanced/}}
 
-\title{\textbf{Supplementary Information}\\[0.5em]
-\large Mechanistic Interpretability of Plant Genomic Foundation Models:\\
-Dissecting How Transformers Process Plant DNA}
+% Define command expected by sn-basic.bst
+\providecommand{\bibcommenthead}{}
+
+\title{\textbf{Online Resource 1}\\[0.5em]
+\large Mechanistic Interpretability of a Plant Genomic Foundation Model}
 
 \author{Ihor Kendiukhov}
 \date{}
@@ -25,20 +31,101 @@ Dissecting How Transformers Process Plant DNA}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{attention_statistics.png}
-    \caption{\textbf{Supplementary Figure S1.} Attention weight statistics across all 144 attention heads in Plant-DnaGemma, showing the distribution of mean attention weights, entropy, and maximum attention values per head.}
+    \includegraphics[width=0.85\textwidth]{attention_statistics.png}
+    \caption{\textbf{Figure S1: Attention weight statistics.} Distribution of mean attention weights, entropy, and maximum attention values across all 144 attention heads in Plant-DnaGemma. The diversity of attention statistics indicates that heads employ varied strategies ranging from highly focused to broadly distributed attention.}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{confusion_matrix_best_layer.png}
-    \caption{\textbf{Supplementary Figure S2.} Confusion matrix for the linear probing classifier at layer 10 (best-performing layer), showing classification patterns across the four genomic sequence types.}
+    \caption{\textbf{Figure S2: Confusion matrix at the best probing layer.} Classification patterns across the four genomic sequence types at the best-performing layer. Off-diagonal entries reveal which sequence types are most commonly confused.}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.7\textwidth]{probing_accuracy_by_layer.png}
-    \caption{\textbf{Supplementary Figure S3.} Probing accuracy plotted by layer, showing the progression of classification performance from the embedding layer through all 12 transformer layers.}
+    \includegraphics[width=0.85\textwidth]{probing_analysis_comprehensive.png}
+    \caption{\textbf{Figure S3: Extended probing analysis.} Additional probing visualizations including per-class F1 scores, relative improvement over chance, and representational hierarchy annotations from the initial (130-sequence) probing analysis.}
 \end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{sae_feature_analysis.png}
+    \caption{\textbf{Figure S4: Initial bottleneck SAE analysis.} For comparison with the overcomplete SAE in the main paper, this shows results from a bottleneck autoencoder (768$\to$256) trained on layer-10 representations. The bottleneck architecture achieves 70.6\% sparsity but with only 256 features, limiting the granularity of feature discovery.}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{cross_species_analysis.png}
+    \caption{\textbf{Figure S5: Initial cross-species analysis.} PCA and t-SNE projections of layer-10 representations for \textit{Arabidopsis}, rice, and maize sequences, with species classification and inter-species distance analysis. Note that these results were obtained from a single train/test split; the main paper reports 5-fold cross-validated results with baseline comparisons.}
+\end{figure}
+
+\section*{Supplementary Tables}
+
+\begin{table}[h!]
+    \centering
+    \caption{\textbf{Table S1: $k$-mer baseline results for sequence type classification.} 5-fold cross-validated accuracy and macro F1 for $k$-mer frequency features.}
+    \begin{tabular}{lcccc}
+        \toprule
+        Method & Features & Accuracy & Macro F1 & Std \\
+        \midrule
+        3-mer frequencies & 64 & 0.650 & --- & 0.045 \\
+        4-mer frequencies & 256 & 0.657 & --- & 0.047 \\
+        5-mer frequencies & 1,024 & 0.670 & --- & 0.059 \\
+        Random model (best) & 768 & 0.525 & 0.524 & 0.022 \\
+        Trained model (best) & 768 & 0.745 & 0.743 & 0.044 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{\textbf{Table S2: Cross-species classification with baselines.} All results are 5-fold cross-validated. Chance level is 33.3\% for 3-class classification.}
+    \begin{tabular}{lcc}
+        \toprule
+        Method & Accuracy & Std \\
+        \midrule
+        Chance & 0.333 & --- \\
+        5-mer frequencies & 0.457 & 0.048 \\
+        4-mer frequencies & 0.507 & 0.027 \\
+        3-mer frequencies & 0.520 & 0.041 \\
+        Model layer 8 (best) & 0.590 & 0.048 \\
+        GC-content only & 0.610 & 0.040 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section*{Supplementary Methods}
+
+\subsection*{Synthetic sequence generation}
+
+Sequences were generated to reflect key biological properties of each genomic region type:
+
+\begin{itemize}
+    \item \textbf{Promoters}: AT-rich background (60\% AT), with TATA box (TATAAA) inserted at positions 20--35, CAAT box at positions 60--80, and optional GC box (GGGCGG) at positions 100--120.
+    \item \textbf{Exons}: Balanced nucleotide composition (25\% each), with in-frame stop codons (TAA, TAG, TGA) replaced by random non-stop codons, and optional start codon (ATG).
+    \item \textbf{Introns}: AT-rich background (65\% AT), with canonical 5' splice site (GT) at position 0, 3' splice site (AG) at the end, and an A-rich branch point region at the sequence midpoint.
+    \item \textbf{Intergenic}: AT-rich background (60\% AT) with optional short tandem repeats (AT, TA, CA, TG) inserted at random positions.
+\end{itemize}
+
+\subsection*{Cross-species sequence generation}
+
+Species-specific sequences were generated by sampling nucleotides according to species-appropriate GC content: 36\% for \textit{A.\ thaliana}, 44\% for \textit{O.\ sativa}, and 47\% for \textit{Z.\ mays}. These values reflect documented genome-wide GC content for each species.
+
+\subsection*{Overcomplete SAE architecture details}
+
+The overcomplete sparse autoencoder uses the following architecture:
+\begin{itemize}
+    \item Encoder: Linear(768, 3072) + ReLU
+    \item Decoder: Linear(3072, 768)
+    \item Loss: MSE reconstruction + $\lambda \cdot \ell_1$ penalty on encoder activations ($\lambda = 5 \times 10^{-4}$)
+    \item Optimizer: Adam with learning rate $10^{-3}$
+    \item Input preprocessing: Per-feature standardization (zero mean, unit variance)
+    \item Training: 200 epochs, batch size 64
+\end{itemize}
+
+This follows the overcomplete dictionary learning paradigm of \citet{bricken2023monosemanticity}, where the dictionary size (3,072) exceeds the input dimension (768) by a factor of 4$\times$, allowing features to be represented as sparse combinations of dictionary elements rather than compressed encodings.
+
+\bibliographystyle{sn-basic}
+\bibliography{../references}
 
 \end{document}
