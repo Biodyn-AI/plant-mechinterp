@@ -93,7 +93,7 @@ specialist venue.
 
 All code, dataset-building scripts, frozen data splits, and
 figure-generation scripts are available at
-**<https://github.com/Biodyn-AI/plant-mechinterp>**. A tagged snapshot
+**<https://github.com/Biodyn-AI/aido-mechinterp>**. A tagged snapshot
 of the repository together with trained sparse-autoencoder weights,
 pre-computed motif-score matrices, and built parquet datasets is
 permanently archived at Zenodo with DOI

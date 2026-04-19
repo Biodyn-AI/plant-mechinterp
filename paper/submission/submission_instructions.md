@@ -70,7 +70,7 @@ Use this template:
 >
 > As foundation models become increasingly important in computational biology, understanding their internal mechanisms is critical for building trust and guiding model improvements. This work provides actionable insights for the genomics community and establishes interpretability techniques that can be applied to other genomic foundation models.
 >
-> All analysis code, trained model weights, and datasets are publicly available at https://github.com/Biodyn-AI/plant-mechinterp to ensure full reproducibility.
+> All analysis code, trained model weights, and datasets are publicly available at https://github.com/Biodyn-AI/aido-mechinterp to ensure full reproducibility.
 >
 > We believe this work aligns perfectly with NAR Genomics and Bioinformatics' focus on large-scale data analysis and computational methods in genomics.
 >
@@ -81,7 +81,7 @@ Use this template:
 - **Ethics approval**: Not applicable (computational analysis only)
 - **Competing interests**: None declared
 - **Funding**: No specific funding received for this study
-- **Data availability**: All code and data available at GitHub repository (Biodyn-AI/plant-mechinterp)
+- **Data availability**: All code and data available at GitHub repository (Biodyn-AI/aido-mechinterp)
 - **Authors' contributions**: IK conceived the study, performed all analyses, and wrote the manuscript
 
 ### 8. Review and Submit

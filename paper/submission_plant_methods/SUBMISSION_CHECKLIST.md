@@ -60,7 +60,7 @@ Based on the journal's current author guidelines (plantmethods.biomedcentral.com
   (ethics, consent, data availability, competing interests, funding,
   authors' contributions, acknowledgements).
 - [x] **Data availability**: code + frozen splits at
-  <https://github.com/Biodyn-AI/plant-mechinterp>; tagged snapshot + SAE
+  <https://github.com/Biodyn-AI/aido-mechinterp>; tagged snapshot + SAE
   weights + built datasets at Zenodo
   DOI [10.5281/zenodo.18665058](https://doi.org/10.5281/zenodo.18665058).
 - [ ] **Reference format**: Vancouver-style numbered (done: `unsrtnat`
@@ -99,7 +99,7 @@ documents is a quick step before submission if desired.
 3. **Recompile** (`pdflatex main; bibtex main; pdflatex main; pdflatex
    main`) and inspect the final PDF.
 4. **Anonymous GitHub link**: the repository is at
-   `Biodyn-AI/plant-mechinterp` — make sure it is public / viewable to
+   `Biodyn-AI/aido-mechinterp` — make sure it is public / viewable to
    reviewers at submission time.
 5. **Zenodo DOI**: done — archived at
    [10.5281/zenodo.18665058](https://doi.org/10.5281/zenodo.18665058).

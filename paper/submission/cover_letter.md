@@ -25,7 +25,7 @@ This work provides actionable insights for the genomics community and establishe
 
 ## Reproducibility and Open Science
 
-All analysis code, trained sparse autoencoder weights, and datasets are publicly available at https://github.com/Biodyn-AI/plant-mechinterp to ensure full reproducibility. This aligns with NAR Genomics and Bioinformatics' strong emphasis on reproducible research.
+All analysis code, trained sparse autoencoder weights, and datasets are publicly available at https://github.com/Biodyn-AI/aido-mechinterp to ensure full reproducibility. This aligns with NAR Genomics and Bioinformatics' strong emphasis on reproducible research.
 
 ## Journal Fit
 
