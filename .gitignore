@@ -1,12 +1,48 @@
-# Large model files (download separately)
+# macOS AppleDouble metadata
+._*
+.DS_Store
+Thumbs.db
+
+# Large model files (downloadable via scripts/download_model.py or HuggingFace)
 models/PlantCAD2-Small/pytorch_model.bin
 models/PlantCAD2-Small/*.bin
 models/**/*.bin
 models/**/*.pt
 models/**/*.safetensors
+models/**/tokenizer*.json
+models/**/*.model
+models/plant-dnagemma-BPE/
 
-# Large analysis artifacts
+# Raw genomic data (regeneratable via scripts/data/fetch_*.py)
+data/real/raw/
+data/test_sequences/
+
+# Built derived datasets (regeneratable via scripts/data/build_*.py)
+data/real/arareg/*.parquet
+data/real/multispecies/*.parquet
+data/real/splice/*.parquet
+data/real/tfbs/*.parquet
+
+# Model activation caches (regeneratable via analysis/probing/extract_activations.py)
+data/real/activations/
+
+# SAE weight files — too large for GitHub; upload to Zenodo instead
+data/real/results/sae/*.pt
+
+# Motif-score matrices (regeneratable via analysis/sae/precompute_motif_scores.py)
+data/real/results/sae_enrichment/*.npy
+
+# Full feature×motif enrichment tables — 29 MB each, regeneratable; keep only
+# the distilled best-per-feature summaries in the repo.
+data/real/results/sae_enrichment/*_feature_motif.csv
+data/real/results/sae_enrichment/*_annotation.csv
+
+# Logs
+data/real/logs/
+
+# Legacy large analysis artifacts
 analysis/results/phase3/agront_comparison_results.pkl
+analysis/results/*_hidden_states.npy
 *.pkl
 
 # Python
@@ -16,9 +52,28 @@ __pycache__/
 .env
 *.egg-info/
 
-# OS
-.DS_Store
-Thumbs.db
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/submission/*.aux
+paper/submission/*.bbl
+paper/submission/*.blg
+paper/submission/*.log
+paper/submission/*.out
+paper/submission_plant_methods/*.aux
+paper/submission_plant_methods/*.bbl
+paper/submission_plant_methods/*.blg
+paper/submission_plant_methods/*.log
+paper/submission_plant_methods/*.out
 
 # IDE
 .vscode/
