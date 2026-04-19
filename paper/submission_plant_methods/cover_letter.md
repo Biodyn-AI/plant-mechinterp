@@ -88,13 +88,17 @@ specialist venue.
 
 ## Reproducibility
 
-All code, dataset-building scripts, frozen data splits, trained SAEs, and
+All code, dataset-building scripts, frozen data splits, and
 figure-generation scripts are available at
-**<https://github.com/Biodyn-AI/plant-mechinterp>**. Data sources are
-pinned to specific versions (TAIR10, Araport11, Ensembl Plants release 58,
-EPDnew v1, JASPAR 2024 CORE plantae). Stochastic pipelines use fixed seeds
-(0, 1, 2). Figures are regenerated deterministically from the committed
-result JSONs.
+**<https://github.com/Biodyn-AI/plant-mechinterp>**. A tagged snapshot
+of the repository together with trained sparse-autoencoder weights,
+pre-computed motif-score matrices, and built parquet datasets is
+permanently archived at Zenodo with DOI
+**<https://doi.org/10.5281/zenodo.18665058>**. Data sources are pinned
+to specific versions (TAIR10, Araport11, Ensembl Plants release 58,
+EPDnew v1, JASPAR 2024 CORE plantae, PlantTFDB 5.0). Stochastic
+pipelines use fixed seeds (0, 1, 2). Figures are regenerated
+deterministically from the committed result JSONs.
 
 ## Declarations
 

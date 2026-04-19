@@ -833,14 +833,19 @@ Not applicable.
 
 \paragraph{Availability of data and materials.}
 All analysis code, data-preparation scripts, frozen train/val/test
-splits, trained sparse autoencoders, intermediate JSON result files, and
-figure-generation scripts are publicly available at
-\url{https://github.com/Biodyn-AI/plant-mechinterp}. Source datasets are
-pinned to the following public versions, with download scripts provided:
-TAIR10 genome and Araport11 annotations (Ensembl Plants release~58);
-EPDnew \textit{A.~thaliana} promoter database (v1); JASPAR 2024 CORE
-\textit{plantae} non-redundant PFMs; PlantTFDB~5.0 Arabidopsis TF list.
-Stochastic pipelines use fixed seeds (0, 1, 2).
+splits, intermediate JSON result files, and figure-generation scripts
+are publicly available at
+\url{https://github.com/Biodyn-AI/plant-mechinterp}. A tagged snapshot of
+the repository together with the trained sparse-autoencoder weights,
+pre-computed motif-score matrices, and built parquet datasets is
+deposited at Zenodo:
+\url{https://doi.org/10.5281/zenodo.18665058}.
+Source datasets are pinned to the following public versions, with
+download scripts provided: TAIR10 genome and Araport11 annotations
+(Ensembl Plants release~58); EPDnew \textit{A.~thaliana} promoter
+database (v1); JASPAR 2024 CORE \textit{plantae} non-redundant PFMs;
+PlantTFDB~5.0 Arabidopsis TF list. Stochastic pipelines use fixed
+seeds (0,~1,~2).
 
 \paragraph{Competing interests.}
 The authors declare that they have no competing interests.

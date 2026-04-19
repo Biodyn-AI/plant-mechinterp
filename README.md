@@ -1,6 +1,8 @@
 # Mechanistic Interpretability of Plant Foundation Models
 
-This repository contains the first systematic application of mechanistic interpretability techniques to plant DNA foundation models. We analyze PlantCAD2-Small to understand what biological features these models learn and how they process plant genomic information.
+This repository contains a systematic mechanistic-interpretability study of plant DNA foundation models, focused on Plant-DnaGemma. It includes an end-to-end reproducible pipeline: benchmark construction from TAIR10/Araport11/EPDnew/Ensembl Plants, per-layer probing with learned baselines, GC-matched composition controls, cross-species analysis with phylogenetic residualization, sparse-autoencoder feature decomposition with JASPAR/PlantTFDB motif grounding, and causal per-component ablations.
+
+**Archival DOI (tagged snapshot + trained SAE weights + built datasets):** [10.5281/zenodo.18665058](https://doi.org/10.5281/zenodo.18665058)
 
 ## Project Overview
 

@@ -59,10 +59,10 @@ Based on the journal's current author guidelines (plantmethods.biomedcentral.com
 - [ ] **Declarations** section with all six required subsections
   (ethics, consent, data availability, competing interests, funding,
   authors' contributions, acknowledgements).
-- [ ] **Data availability**: all code + data accessible at
-  <https://github.com/Biodyn-AI/plant-mechinterp> (public); consider also
-  depositing the frozen dataset splits and pretrained SAE weights at
-  Zenodo and adding a DOI before final acceptance.
+- [x] **Data availability**: code + frozen splits at
+  <https://github.com/Biodyn-AI/plant-mechinterp>; tagged snapshot + SAE
+  weights + built datasets at Zenodo
+  DOI [10.5281/zenodo.18665058](https://doi.org/10.5281/zenodo.18665058).
 - [ ] **Reference format**: Vancouver-style numbered (done: `unsrtnat`
   bibliography style).
 - [ ] **Figures**: high-resolution PNGs (300 DPI preferred) — current
@@ -101,9 +101,8 @@ documents is a quick step before submission if desired.
 4. **Anonymous GitHub link**: the repository is at
    `Biodyn-AI/plant-mechinterp` — make sure it is public / viewable to
    reviewers at submission time.
-5. **Zenodo DOI**: optional but recommended — upload a tagged snapshot
-   of the repo to Zenodo and add the DOI to the Data Availability
-   statement.
+5. **Zenodo DOI**: done — archived at
+   [10.5281/zenodo.18665058](https://doi.org/10.5281/zenodo.18665058).
 6. **Spellcheck and format-check**: run a final pass (aspell / overleaf
    spellcheck) and make sure all abbreviations are defined on first
    use in each section.

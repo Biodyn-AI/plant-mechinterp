@@ -745,10 +745,14 @@ these results provide an evaluation protocol and an initial mechanistic
 picture for plant genomic foundation models.
 
 \paragraph{Reproducibility.}
-All analysis code, datasets, and trained SAEs are available at
-\url{https://github.com/Biodyn-AI/plant-mechinterp}. Data snapshots are
-pinned (TAIR10, Araport11, Ensembl Plants release 58, EPDnew v1,
-JASPAR~2024 CORE plantae); stochastic pipelines use fixed seeds (0, 1, 2).
+All analysis code, frozen splits, and figure-generation scripts are at
+\url{https://github.com/Biodyn-AI/plant-mechinterp}; a tagged snapshot
+with the trained SAE weights, motif-score matrices, and built parquet
+datasets is archived at
+\url{https://doi.org/10.5281/zenodo.18665058}.
+Data snapshots are pinned (TAIR10, Araport11, Ensembl Plants release 58,
+EPDnew v1, JASPAR 2024 CORE plantae, PlantTFDB 5.0); stochastic pipelines
+use fixed seeds (0, 1, 2).
 
 \bibliography{references}
 \bibliographystyle{plainnat}
