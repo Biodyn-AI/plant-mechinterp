@@ -2,9 +2,12 @@
 
 **Manuscript title:** Mechanistic Interpretability of a Plant Genomic Foundation Model: Data Probes, Causal Interventions, and Motif-Grounded Features
 
-**Corresponding author:** *[Name]*, *[Affiliation]*, *[Email]*, *[ORCID]*
+**Corresponding author:** Ihor Kendiukhov, Department of Computer Science,
+University of Tübingen, Tübingen, Germany.
+E-mail: <ihor.kendiukhov@student.uni-tuebingen.de>.
+ORCID: [0000-0001-5342-1499](https://orcid.org/0000-0001-5342-1499).
 
-**Co-authors:** *[names / affiliations / ORCIDs]*
+**Co-authors:** none (sole author).
 
 ---
 
@@ -102,30 +105,32 @@ deterministically from the committed result JSONs.
 
 ## Declarations
 
-- **This work has not been published elsewhere and is not under consideration
-  by any other journal.**
-- **Competing interests:** the authors declare no competing interests.
+- **This work has not been published elsewhere and is not under
+  consideration by any other journal.**
+- **Competing interests:** the author declares no competing interests.
 - **Ethics:** this study uses only publicly available genomic data; no
   animal or human subjects were involved.
-- **Funding:** *[fill in funding source / grants]*.
-- **Author contributions:** *[fill in CRediT roles]*.
+- **Funding:** no specific grant from any public, commercial, or
+  not-for-profit funding agency.
+- **Author contributions:** Ihor Kendiukhov (sole author) conceived the
+  study, designed and ran all experiments, analyzed the results, and
+  wrote the manuscript.
 
 ## Suggested reviewers
 
-Plant genomic foundation models / interpretability:
-1. *[Expert in plant foundation models — AgroNT / PlantCAD2 groups]*
-2. *[Expert in genomic interpretability / DNABERT / Nucleotide Transformer]*
-3. *[Expert in plant transcription-factor biology / PlantTFDB / JASPAR]*
-4. *[Expert in plant regulatory genomics — TAIR / Araport]*
+The author does not suggest specific reviewers and defers to the editorial
+office to identify suitable referees among active researchers in plant
+genomic foundation models, genomic interpretability, and plant
+transcription-factor biology (PlantTFDB / JASPAR).
 
 ## Non-preferred reviewers
 
-*[Fill in if any conflicts of interest]*
+None.
 
-We thank you for considering our manuscript. We look forward to the
+Thank you for considering this manuscript. I look forward to the
 reviewers' feedback.
 
 Sincerely,
 
-*[Corresponding author name]*
-On behalf of all co-authors.
+Ihor Kendiukhov
+Department of Computer Science, University of Tübingen.
